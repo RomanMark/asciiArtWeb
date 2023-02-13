@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel = "icon" href="https://neonxp.gallerycdn.vsassets.io/extensions/neonxp/gotools/0.0.7/1617490636710/Microsoft.VisualStudio.Services.Icons.Default" type = "image/x-icon">
+    <title>ASCII Art-web</title>
+  </head>
+  <body>
+    <div class="container">
+      <form method="POST" action="/ascii-art" id="form-group">
+        <div class="form-group">
+          <h2>Enter your text below</h2>
+          <textarea 
+          name="input"
+          type="text"
+          class="input-field"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="styles">Choose your font:</label>
+          <select name="styles" id="styles">
+            <option value="standard" selected="standard">Standard</option>
+            <option value="shadow">Shadow</option>
+            <option value="thinkertoy">Thinkertoy</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input
+            type="submit"
+            value="Generate ASCII"
+            class="button-style"
+            id="generate-button"/>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
